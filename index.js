@@ -40,8 +40,14 @@ const alunosDaEscola = [{
 const adicionarAluno = (nome) => {
 
     alunosDaEscola.push({
-        nome: nome
+        nome: nome,
+        notas: [],
+        cursos: [],
+        faltas: 0
     });
+
+    console.log(`O(A) aluno(a) ${nome} foi adicionado com sucesso`);
+    
 }
 
 
@@ -64,5 +70,5 @@ const listarAlunos = (alunos) => {
     Vale dizer que As informações deverão ser exibidas em um formato amigável.*/
 }
 
-
+adicionarAluno("Anderson")
 listarAlunos(alunosDaEscola);
